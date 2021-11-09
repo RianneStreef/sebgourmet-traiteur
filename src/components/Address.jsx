@@ -2,6 +2,8 @@ import React from "react";
 
 import { content } from "../content/languages";
 
+import pin from "../images/pin.png";
+
 const Address = (props) => {
   let { language } = props;
 
@@ -10,8 +12,8 @@ const Address = (props) => {
     : (language = content.french);
   return (
     <div className="footer-item">
-      <div className="footer-icon">
-        <i className="fas fa-map-pin i"></i>
+      <div className="footer-icon-container">
+        <img src={pin} className="footer-icon" />
       </div>
       <h4>{language.address}</h4>
 

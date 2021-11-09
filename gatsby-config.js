@@ -15,7 +15,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Cormorant Garamond`, `Roboto`, `source sans pro\:100,300,400`],
+        fonts: [
+          `Cormorant Garamond`,
+          `Roboto:\:100, 300, 400`,
+          `source sans pro\:100,300,400`,
+        ],
         display: "swap",
       },
     },

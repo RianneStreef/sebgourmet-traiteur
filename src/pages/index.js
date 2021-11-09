@@ -17,7 +17,7 @@ const IndexPage = (props) => {
   console.log(props);
 
   return (
-    <div>
+    <div className="App">
       <Hero
         language={language}
         setLanguage={setLanguage}

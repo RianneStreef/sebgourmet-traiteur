@@ -2,6 +2,8 @@ import React from "react";
 
 import { content } from "../content/languages";
 
+import telephone from "../images/telephone.png";
+
 const Phone = (props) => {
   let { language } = props;
 
@@ -11,8 +13,8 @@ const Phone = (props) => {
 
   return (
     <div className="footer-item">
-      <div className="footer-icon">
-        <i className="fas fa-phone" />
+      <div className="footer-icon-container">
+        <img src={telephone} className="footer-icon" />
       </div>
       <h4>{language.callUs}</h4>
       <a href="tel:0033679783308">

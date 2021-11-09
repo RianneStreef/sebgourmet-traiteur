@@ -2,6 +2,8 @@ import React from "react";
 
 import { content } from "../content/languages";
 
+import mail from "../images/envelop.png";
+
 const Mail = (props) => {
   let { language } = props;
 
@@ -10,8 +12,8 @@ const Mail = (props) => {
     : (language = content.french);
   return (
     <div className="footer-item">
-      <div className="footer-icon">
-        <i className="far fa-envelope" />
+      <div className="footer-icon-container">
+        <img src={mail} className="footer-icon" />
       </div>
       <h4>{language.mailUs}</h4>
       <a href="mailto:sebgourmettraiteur@orange.fr">
