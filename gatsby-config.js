@@ -17,7 +17,7 @@ module.exports = {
       options: {
         fonts: [
           `Cormorant Garamond`,
-          `Roboto:\:100, 300, 400`,
+          `Roboto\:100, 300`,
           `source sans pro\:100,300,400`,
         ],
         display: "swap",
