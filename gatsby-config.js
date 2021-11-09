@@ -3,5 +3,20 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "sebgourmet-traiteur",
   },
-  plugins: ["gatsby-plugin-react-helmet"],
+  plugins: [
+    "gatsby-plugin-react-helmet",
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`./src/components/Layout.jsx`),
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Cormorant Garamond`, `Roboto`, `source sans pro\:100,300,400`],
+        display: "swap",
+      },
+    },
+  ],
 };
