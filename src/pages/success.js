@@ -11,7 +11,7 @@ const SuccessPage = (props) => {
   language === "english"
     ? (languageToUse = content.english)
     : (languageToUse = content.french);
-  let languageStoredInLocalStorage = localStorage.getItem("language");
+  // let languageStoredInLocalStorage = localStorage.getItem("language");
 
   // languageStoredInLocalStorage ? languageStoredInLocalStorage : "french";
 
