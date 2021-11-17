@@ -8,6 +8,8 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Copyright from "../components/Copyright";
 
+import { Helmet } from "react-helmet";
+
 import banner from "../images/banner.jpg";
 import bannerEN from "../images/bannerEN.jpg";
 import banner2 from "../images/banner2.jpg";
@@ -18,6 +20,16 @@ const IndexPage = (props) => {
 
   return (
     <div className="App">
+      <Helmet>
+        <title>Seb Gourmet Traiteur </title>
+        <meta name="robots" content="index, follow" />
+        <meta
+          name="description"
+          content="Traiteur basé dans le Valle des Belleville, Savoie"
+        />
+        <meta name="keywords" content="traiteur, les Belleville, Savoie" />
+        <link rel="canonical" href="https://www.sebgourmet-traiteur.com/" />
+      </Helmet>
       <Hero
         language={language}
         setLanguage={setLanguage}
