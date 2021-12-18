@@ -13,7 +13,7 @@ const Address = (props) => {
   return (
     <div className="footer-item">
       <div className="footer-icon-container">
-        <img src={pin} className="footer-icon" />
+        <img src={pin} alt="" className="footer-icon" />
       </div>
       <h4>{language.address}</h4>
 

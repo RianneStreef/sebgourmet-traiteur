@@ -1,12 +1,26 @@
 import React from "react";
 import Hero2 from "../components/Hero2";
 import "../styles/Legal.css";
+import { Helmet } from "react-helmet";
+
+import favicon from "../images/icon.png";
 
 const LegalPage = (props) => {
   let { language, setLanguage, languageToUse } = props;
 
   return (
-    <div>
+    <>
+      <Helmet>
+        <title>Seb Gourmet Traiteur </title>
+        <meta name="robots" content="index, follow" />
+        <meta
+          name="description"
+          content="Traiteur basé dans le Valle des Belleville, Savoie"
+        />
+        <meta name="keywords" content="traiteur, les Belleville, Savoie" />
+        <link rel="canonical" href="https://www.sebgourmet-traiteur.com/" />
+        <link rel="icon" href={favicon} />
+      </Helmet>
       <Hero2
         language={language}
         setLanguage={setLanguage}
@@ -325,7 +339,7 @@ const LegalPage = (props) => {
           loi n° 78-17 du 6 janvier 1978).
         </p>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -9,6 +9,7 @@ import Footer from "../components/Footer";
 import Copyright from "../components/Copyright";
 
 import { Helmet } from "react-helmet";
+import favicon from "../images/icon.png";
 
 import banner from "../images/banner.jpg";
 import bannerEN from "../images/bannerEN.jpg";
@@ -29,6 +30,7 @@ const IndexPage = (props) => {
         />
         <meta name="keywords" content="traiteur, les Belleville, Savoie" />
         <link rel="canonical" href="https://www.sebgourmet-traiteur.com/" />
+        <link rel="icon" href={favicon} />
       </Helmet>
       <Hero
         language={language}
@@ -37,7 +39,7 @@ const IndexPage = (props) => {
       />
       <Welcome language={language} languageToUse={languageToUse} />
 
-      {language == "french" ? (
+      {language === "french" ? (
         <img
           src={banner}
           className="banner"

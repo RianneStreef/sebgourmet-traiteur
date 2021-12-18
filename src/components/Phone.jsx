@@ -14,7 +14,7 @@ const Phone = (props) => {
   return (
     <div className="footer-item">
       <div className="footer-icon-container">
-        <img src={telephone} className="footer-icon" />
+        <img src={telephone} alt="" className="footer-icon" />
       </div>
       <h4>{language.callUs}</h4>
       <a href="tel:0033679783308">

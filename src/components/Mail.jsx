@@ -13,7 +13,7 @@ const Mail = (props) => {
   return (
     <div className="footer-item">
       <div className="footer-icon-container">
-        <img src={mail} className="footer-icon" />
+        <img src={mail} alt="" className="footer-icon" />
       </div>
       <h4>{language.mailUs}</h4>
       <a href="mailto:sebgourmettraiteur@orange.fr">
